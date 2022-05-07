@@ -1,5 +1,6 @@
 body{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
 }
 
 
@@ -8,7 +9,7 @@ h1{
     font-size: 3rem;
 }
 
-table{
+#log{
     text-align: center;
     border: solid black 1px;
     margin: 0;
@@ -48,16 +49,143 @@ input[type=text], input[type=password] {
     height: 4vh;
     font-size: 2rem;
 }
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    height: 10vh;
+    font-size: 1.5rem;
+}
+nav>ul {
+    display: flex;
+    color: white;
+    list-style: none;
+    position: absolute;
+    top: 0;
+    width: 100vw;
+    height: 100%;
+    margin: 0;
+    justify-content: space-around;
+    background-color: rgb(239, 65, 53);
+    font-weight: bolder;
+    align-items: center;
+    
+}
+nav>ul>li {
+    display: inline;
+}
+
+nav>ul>li:hover {
+    cursor: pointer;
+}
+.mtable {
+    margin: 1rem auto;
+    font-size: 1.4rem;
+}
+
+.mtable>tbody>tr>td:nth-child(even) {
+    padding-left: 2rem;
+    
+}
+
+.bed {
+    display: block;
+    font-size:  1.4rem;
+    padding: 0.8rem;
+    margin-top: 1rem;
+    background-color: rgb(239, 65, 53);
+    border: none;
+    color: white;
+    text-decoration: none;
+}
+
+#bed1 {
+    border-radius: 1rem 0 0 1rem;
+    border-right: white solid 1px;
+    width: 14rem;
+}
+#bed2 {
+    border-radius: 0 1rem 1rem 0;
+    width: 14rem;
+    border-left: white solid 1px;
+}
+
+
+.choose {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.choose>button:hover {
+    background-color: #4885ed;
+    cursor: pointer;
+    color: #c0c0c0;
+}
+
+#mdiv {
+    display: none;   
+}
+#mdiv2 {
+    display: none;   
+}
+
+#addb {
+    margin: 1rem 0;
+    
+    display: flex;
+    position: relative;
+    height: 10vh;
+    justify-content: center;
+    align-items: center;
+}
+.bdi {
+    height: 100% !important;
+    margin: 0;
+    outline: none;
+    border: 0;
+    border-bottom: solid #c0c0c0;
+    padding-top: 1rem;
+}
+
+
+.arr:hover{
+    cursor: pointer;
+    background-color: #4CAF50;
+}
+
+#arrowr {
+    display: block;
+    font-size:  3rem;
+    border: none;
+    color: black;
+    text-decoration: none;
+    height: 100%;
+}
+#arrowl {
+    display: block;
+    font-size:  3rem;
+    border: none;
+    color: black;
+    text-decoration: none;
+    height: 100%;
+}
+#actualVal {
+    text-align: center;
+    
+}
+
 @media (max-width: 200px)
 {
-    table{
+    #log{
         text-align: center;
         border: solid black 1px;
         margin: 0;
         position: absolute;
         padding: 1rem;
         font-size: 1rem;
-        background-color: red;
+        
     }
     input[type="submit"]:hover {
     cursor: pointer;
@@ -83,7 +211,7 @@ input[type=text], input[type=password] {
     h1 {
         display: none;
     }
-    table{
+    #log{
         text-align: center;
         border: solid black 1px;
         margin: 0;
@@ -99,7 +227,7 @@ input[type=text], input[type=password] {
 }
 
 @media (min-width: 1600px){
-    table{
+    #log{
         text-align: center;
         border: solid black 1px;
         margin: 0;

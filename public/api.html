@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="/static/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <nav class="principal">
+        <ul>
+            <li>Edificios Censados</li>
+            <li>Campañas</li>
+            <li>Guias</li>
+        </ul>
+    </nav>
+    <section id="main">
+        <table id="edf" class="mtable">
+            <tbody >
+                <tr>
+                    <td>Totales: </td>
+                    <td>114</td>
+                </tr>
+                <tr>
+                    <td>Censados: </td>
+                    <td id="censados">0</td>
+                </tr>
+                <tr>
+                    <td>Por Censar: </td>
+                    <td>114</td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="choose" id="choose">
+            <button class="bed" id="bed1">Ver Edificios</button>
+            <button class="bed" id="bed2">Añadir Edificios</button> 
+        </div>
+        <div id="mdiv">
+            <h3 id="actualVal">Nombre del Edificio</h3>
+            <div id="addb">
+                <button class="arr" id="arrowl">&larr;</button>
+                <input type="text" name="buidingName" id="bdi" class="bdi">
+                <button class="arr" id="arrowr">&rarr;</button>
+            </div>
+        </div>
+        <div id="mdiv2">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Edificios</th>
+                    </tr>
+                </thead>
+            </table>
+        </div>
+    </section>
+    <script src="/static/script.js"></script>
+</body>
+</html>
